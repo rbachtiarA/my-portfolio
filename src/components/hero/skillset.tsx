@@ -32,7 +32,7 @@ export default function Skillset() {
   return (
     <IconContext.Provider value={{}}>
       <div className="flex justify-center flex-col items-center">
-          <h1 className="text-3xl">Skills & Languages</h1>
+          <h1 className="text-4xl">Skills & Languages</h1>
           <ul className="flex flex-auto gap-6 justify-center flex-wrap">
               {MY_SKILL_SET.map((item) => (
                 skillsetItem(item.content, item.label)
