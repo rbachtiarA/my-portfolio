@@ -14,7 +14,7 @@ export default function Navbar() {
         </span>
 
         <div className='navigation-items flex justify-center w-full'>
-          <ul className='flex gap-16 text-2xl'>
+          <ul className='flex gap-8 md:gap-16 items-center md:text-2xl'>
             
             <LinkButton link='/' label='Main' />
             <LinkButton link='/works' label='My Works' />

@@ -26,11 +26,11 @@ body {
     }
 
     .text-heading2 {
-        @apply text-heading text-4xl;
+        @apply text-heading text-6xl;
     }
 
     .text-heading3 {
-        @apply text-heading text-2xl;
+        @apply text-heading text-4xl;
     }
 
     .logo-dark {

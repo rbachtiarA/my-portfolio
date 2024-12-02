@@ -49,7 +49,7 @@ export const MY_WORKS_ITEMS: IMyWorkItem[] = [
             },
             {
                 label: 'Organizer Roles', 
-                description: 'You can become organizer, which can create your own event and make your own ticket & promo for your events, confirm user payment, and track their sales'
+                description: 'You can become organizer, which can create your own event and make your own ticket & promo for your events, confirm user payment, and track ticket sales'
             },
             {
                 label: 'Browse Event & Buy ticket', 

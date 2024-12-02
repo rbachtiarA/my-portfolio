@@ -1,7 +1,7 @@
 export interface IMyWorkItem {
     title: string;
     summary: string;
-    longDescription?: string;
+    longDescription?: STARMethod;
     link: string;
     linkDetails: string;
     features?: IWorkFeature[];
@@ -12,4 +12,11 @@ export interface IMyWorkItem {
 interface IWorkFeature {
     label: string;
     description: string;
+}
+
+interface STARMethod {
+    situation: string,
+    task: string,
+    action: string,
+    result: string,
 }
