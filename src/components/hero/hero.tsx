@@ -13,9 +13,12 @@ export default function Hero() {
             <p>Fullstack Web Developer</p>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 md:flex flex-col md:h-[400px] justify-evenly">
+          <p className="hidden md:block">Hi, Welcome to my portfolio</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ipsa officiis eveniet nam nobis non corrupti veniam magni! Tempore earum cupiditate hic officia, veritatis quod aliquam natus ab maiores! Nisi, reiciendis ipsum? Enim voluptate deserunt, voluptates voluptas architecto nobis hic, veniam cum, impedit ipsa fugiat? Iste ut amet sed necessitatibus!</p>
-          <MyContactButton />
+          <div className="flex justify-end">
+            <MyContactButton />
+          </div>
         </div>
     </div>
   )
