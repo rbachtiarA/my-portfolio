@@ -1,3 +1,4 @@
+'use client'
 import { redirect } from "next/navigation";
 import { ReactNode } from "react";
 import { CiMail } from "react-icons/ci";
@@ -11,6 +12,7 @@ export default function MyContactButton() {
             </button>
         )
     } 
+
   return (
     <div className="flex gap-2">
         <ContactButton link="https://wa.me/+628561232435">

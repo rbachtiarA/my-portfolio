@@ -5,7 +5,7 @@ import { IMyWorkItem } from "@/types/myworks"
 import Image from "next/image"
 
 export default function MyWorks() {
-    const myWorkItem = ({link, linkDetails,summary, title, mainImage}: IMyWorkItem) => (
+    const myWorkItem = ({linkGithub, linkDemo, linkDetails,summary, title, mainImage}: IMyWorkItem) => (
         <li key={title} className="mx-7 py-8 md:py-16 flex flex-col md:flex-row md:odd:flex-row-reverse md:[&_img]:odd:skew-y-2 md:[&_img]:even:-skew-y-2 md:[&_img]:hover:skew-y-0">
             <div className="flex justify-center md:w-1/2">
                 <Image loading="lazy" className='rounded-md border-[1px] border-slate-400 md:transform-gpu transition' src={mainImage || '/'} alt={title} width={400} height={300}/>
@@ -15,7 +15,7 @@ export default function MyWorks() {
                 {/* Link works / project */}
                 <div className="flex justify-between">
                     <span className="flex">
-                        <a href={link} className="underline hover:text-gray-700">
+                        <a href={linkGithub} className="underline hover:text-gray-700">
                             <div className="flex gap-2">
                                 {title} - Github repo <VscGithubProject />
                             </div>
@@ -33,6 +33,14 @@ export default function MyWorks() {
                 <p className="text-wrap">
                     {summary}
                 </p>
+                {
+                    linkDemo && 
+                    <span className="flex">
+                        <a href={linkDemo} className="underline hover:text-gray-700">
+                                Live demo
+                        </a>
+                    </span>
+                }
             </div>
         </li>
     )
