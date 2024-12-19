@@ -7,7 +7,7 @@ const MyWorks = lazy(() => import('@/components/hero/myWorks'))
 const Skillset = lazy(() => import('@/components/hero/skillset'))
 export default function Home() {
     return (
-        <section className="h-full flex flex-col space-y-10 my-10 px-2">
+        <section className="h-full flex flex-col space-y-10 px-2">
             <Hero />
             <Suspense fallback={<div>Loading ....</div>}>
                 <Skillset />
