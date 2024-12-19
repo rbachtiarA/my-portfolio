@@ -13,7 +13,12 @@ export default function Hero() {
         </div>
         <div className="md:w-1/2 md:flex flex-col md:h-[400px] justify-evenly">
           <p className="hidden md:block">Hi, Welcome to my portfolio</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ipsa officiis eveniet nam nobis non corrupti veniam magni! Tempore earum cupiditate hic officia, veritatis quod aliquam natus ab maiores! Nisi, reiciendis ipsum? Enim voluptate deserunt, voluptates voluptas architecto nobis hic, veniam cum, impedit ipsa fugiat? Iste ut amet sed necessitatibus!</p>
+          <p> 
+            I&apos;m a Fullstack web developer, Mostly stack my project used is ReactJS with NextJS framework for frontend, NodeJS with
+            expressJS for logic and RESTful API backend, and with help Prisma ORM to design schema and data management for MySQL or PostgreSQL database.
+            My demo projects deployed in vercel platform using supabase as temporary database. Right now, I&apos;m trying to boarden my knowledge 
+            with other frameworks such as laravel and tauri(?) and improve my knowledge in testing e2e for better CI/CD in my upcoming projects.
+          </p>
           <div className="flex justify-end">
             <MyContactButton />
           </div>

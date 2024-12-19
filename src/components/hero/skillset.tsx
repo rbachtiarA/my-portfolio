@@ -2,7 +2,7 @@
 import { IconContext } from "react-icons";
 import { BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiLogoNodejs, BiLogoPostgresql, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { RiSupabaseFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiPrisma } from "react-icons/si";
 import { TbBrandMysql, TbBrandNextjs } from "react-icons/tb";
 export default function Skillset() {
   const SIZE_ICON = 72
@@ -17,6 +17,7 @@ export default function Skillset() {
     {content: <BiLogoTailwindCss size={SIZE_ICON}/>, label: 'Tailwind CSS'},
     {content: <BiLogoNodejs size={SIZE_ICON}/>, label: 'NodeJS'},
     {content: <SiExpress size={SIZE_ICON}/>, label: 'ExpressJS'},
+    {content: <SiPrisma size={SIZE_ICON}/>, label: 'Prisma ORM'},
     {content: <TbBrandMysql size={SIZE_ICON}/>, label: 'MySQL'},
     {content: <BiLogoPostgresql size={SIZE_ICON}/>, label: 'Postgresql'},
     {content: <RiSupabaseFill size={SIZE_ICON}/>, label: 'Supabase'},
@@ -33,7 +34,7 @@ export default function Skillset() {
     <IconContext.Provider value={{}}>
       <div className="flex justify-center flex-col items-center">
           <h1 className="text-4xl">Skills & Languages</h1>
-          <ul className="flex flex-auto gap-6 justify-center flex-wrap">
+          <ul className="grid grid-cols-5 md:grid-cols-8 md:gap-x-10 gap-2">
               {MY_SKILL_SET.map((item) => (
                 skillsetItem(item.content, item.label)
               ))}

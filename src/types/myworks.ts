@@ -2,7 +2,8 @@ export interface IMyWorkItem {
     title: string;
     summary: string;
     longDescription?: STARMethod;
-    link: string;
+    linkDemo?: string;
+    linkGithub: string;
     linkDetails: string;
     features?: IWorkFeature[];
     mainImage?:string,

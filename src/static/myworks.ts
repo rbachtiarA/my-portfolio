@@ -3,10 +3,11 @@ import { IMyWorkItem } from "@/types/myworks";
 export const MY_WORKS_ITEMS: IMyWorkItem[] = [
     {
         title: 'Bermuda Store',
-        summary: 'A modern web-based grocery store application designed to simplify and enhance the shopping experience for customers. Built with cutting-edge technologies like NextJS for a fast, responsive frontend, Express.js for a robust backend, and Prisma with MySQL for efficient database management, it ensures high performance and scalability. The platform offers user-friendly navigation, secure transactions, and features tailored for convenience, such as personalized shopping lists, real-time inventory updates, and seamless checkout. With a focus on reliability and customer satisfaction, Bermuda Store aims to revolutionize the online grocery shopping experience.',
-        link: 'https://github.com/rbachtiarA',
+        summary: 'A modern web-based grocery store application designed to simplify and enhance the shopping experience for customers. Built with NextJS framework for a fast, responsive frontend, Express.js for a robust backend, and Prisma with MySQL for efficient database management, it ensures high performance and scalability. The platform offers user-friendly navigation, secure transactions, and features tailored for convenience, such as personalized shopping lists, real-time inventory updates, and seamless checkout. With a focus on reliability and customer satisfaction, Bermuda Store aims to revolutionize the online grocery shopping experience.',
+        linkDemo: 'https://bermuda-web.vercel.app/',
+        linkGithub: 'https://github.com/rbachtiarA',
         linkDetails: '/works/bermuda-store-app',
-        mainImage: '/bermuda-homepage.jpg',
+        mainImage: '/bermuda-homepage1.jpg',
         images: [
             '/bermuda-homepage.jpg'
         ],
@@ -36,7 +37,7 @@ export const MY_WORKS_ITEMS: IMyWorkItem[] = [
     {
         title: 'Bandar Ticket',
         summary: 'A comprehensive event ticketing web application designed to cater to different user roles. Customers can easily browse, buy, or book tickets for various events, while organizers can efficiently create events, manage ticketing, and monitor sales performance. Administrators oversee all platform data, ensuring smooth operations and integrity. Built with NextJS for an intuitive and dynamic user interface, Express.js for a scalable backend, and Prisma with MySQL for reliable database management, Bandar Tiket offers a seamless and secure platform for event management and ticket purchasing.',
-        link: 'https://github.com/rbachtiarA',
+        linkGithub: 'https://github.com/rbachtiarA',
         linkDetails: '/works/bandar-ticket-app',
         mainImage: '/bandar-home.png',
         images: [

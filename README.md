@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Introduction
 
-## Getting Started
+This repository is intended to my own usage for building my portfolio, by using react (NextJS) i will able to make various interesting things. I will deploy this repo on [Vercel Platform](https://vercel.com). Many project that i have done is deployed on vercel on demo mode, sometimes i still tinkering with my previous projects to improve features or code base just for learning. Hope you like your visit in my github.
 
-First, run the development server:
+## Regarding My Projects Demo in Vercel Deployment
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I will deploy my latest project demo in vercel. My previous projects will be discarded from deployment, but you can still try my previous projects on your localhost with cloning my repository and some tweaking for `.env` in webs and api root. You can follow the `.env` with `.env.template` i prepared on each project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## My Future Plans
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Deploying my project demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If time and money comes by, I will try to hosting my own server or using VPS by renting some affordable and quality services. I will try to transfer my project to there, so it can be accessed without limitation from third-party services (except from hosting service).
 
-## Learn More
+### Improving my Skills
 
-To learn more about Next.js, take a look at the following resources:
+Eventhough i'm carrer switching from my previous carrer. I'm still striving and thirst againts knowledge in technologies, mainly in computer engineering. So right now step-by-step I'm still learning and reading many basic & principle books around programming language and networking (and some machine learning & data science) to gain depth of knowledge that i needed. Feel free to recommend me your favorite book / hidden gems book.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## My Thank You for You
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for visiting my portfolio, hope your visit here not wasting your time. I hope i can collaborate with you and your team if you need my skills and knowledge, so we can make somethings that shook the world
