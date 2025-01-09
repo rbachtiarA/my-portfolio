@@ -8,6 +8,9 @@ export const MY_WORKS_ITEMS: IMyWorkItem[] = [
         linkGithub: 'https://github.com/rbachtiarA',
         linkDetails: '/works/bermuda-store-app',
         mainImage: '/bermuda-homepage1.jpg',
+        tools: [
+            'javascript', 'typescript', 'nextjs', 'nextui','nodejs', 'mysql', 'prisma', 'supabase'
+        ],
         images: [
             '/bermuda-homepage.jpg'
         ],
@@ -40,6 +43,9 @@ export const MY_WORKS_ITEMS: IMyWorkItem[] = [
         linkGithub: 'https://github.com/rbachtiarA',
         linkDetails: '/works/bandar-ticket-app',
         mainImage: '/bandar-home.png',
+        tools: [
+            'javascript', 'typescript', 'html', 'css', 'nextjs', 'expressjs', 'prisma', 'mysql'
+        ],
         images: [
             '/bandar-home.png'
         ],

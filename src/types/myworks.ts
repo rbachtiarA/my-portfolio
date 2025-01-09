@@ -8,6 +8,7 @@ export interface IMyWorkItem {
     features?: IWorkFeature[];
     mainImage?:string,
     images: string[];
+    tools: WorkTools[]
 }
 
 interface IWorkFeature {
@@ -21,3 +22,17 @@ interface STARMethod {
     action: string,
     result: string,
 }
+
+type WorkTools = 
+    "javascript"|
+    "typescript"|
+    "html"|
+    "css"|
+    "nextui"|
+    "nodejs"|
+    "expressjs"|
+    "nextjs"|
+    "mysql"|
+    "postgresql"|
+    "prisma"|
+    "supabase"
