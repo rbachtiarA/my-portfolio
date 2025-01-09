@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${leagueSpartan.className} antialiased flex flex-col min-h-screen`}
+        className={`${leagueSpartan.className} antialiased flex flex-col min-h-screen bg-gradient-to-b from-slate-100 from-40% to-sky-200`}
       >
         <Navbar />
         <main className="flex-1 h-full">
