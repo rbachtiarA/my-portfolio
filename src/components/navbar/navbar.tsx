@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className='w-full bg-slate-100 border border-b-2 sticky top-0 flex items-center p-4 min-h-16'>
+    <nav className='w-full bg-slate-100 border border-b-2 sticky top-0 flex items-center p-4 min-h-16 z-10'>
         <span className='flex w-full'>
           <Link href={'/'} className='hover:brightness-150 brand-logo flex justify-start items-center gap-2 transition'>
             <Image src={'/logo-dark.png'} alt='RyanBA' width={64} height={64} />
