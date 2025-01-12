@@ -18,7 +18,7 @@ export default function Skillset() {
 
   function SkillSetItem ({content, label}:{content: string, label: string}) {
     return (
-      <li key={label} className="flex flex-col justify-between items-center">
+      <li key={label} className={`flex flex-col justify-between items-center opacity-0 animate-wiggleAppear`} style={{animationTimeline: 'view()', animationRange: 'entry', animationFillMode: 'forwards'}}>
         <Image className={'grayscale hover:grayscale-0 transition hover:scale-110'} src={content} width={72} height={72} alt={`logo of ${label}`}/>
         <p>{label}</p>
       </li>

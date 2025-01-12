@@ -8,8 +8,10 @@ import Link from 'next/link'
 function HeaderCard({imgLink, imgAlt}: { imgLink: string, imgAlt: string }) {
 
 	return (
-		<div className='overflow-hidden self-center rounded-md'>
-			<Image src={imgLink} width={400} height={0} alt={imgAlt}/>
+		<div className='w-full flex justify-center'>
+			<div className='overflow-hidden rounded-md max-w-[450px]'>
+				<Image src={imgLink} width={450} height={0} alt={imgAlt}/>
+			</div>
 		</div>
 	)
 }
@@ -17,7 +19,7 @@ function ContentCard({title, tools, description}: {title: string, tools: IMyWork
 
 	return (
 		<div className='flex flex-col gap-2'>
-			<h1>{title}</h1>
+			<h1 className='font-semibold text-xl'>{title}</h1>
 			<div>
 				<ToolsTag tags={tools}/>
 			</div>
@@ -48,7 +50,7 @@ function FooterCard({ linkDemo, linkGit }: { linkGit?: string, linkDemo?: string
 }
 export default function ProjectCard({ project }: { project: IMyWorkItem }) {
   return (
-    <li className='w-full h-full flex flex-col justify-between py-4 px-2 shadow-sm bg-slate-50 rounded-sm hover:[&_img]:scale-125 [&_*]:transition-all duration-300'>
+    <li className='w-full h-full grid grid-rows-[200px_1fr_2em] justify-center items-center py-4 px-2 gap-y-2 shadow-sm bg-slate-50 rounded-sm hover:[&_img]:scale-125 [&_*]:transition-all duration-300'>
       {/* HEADER */}
 			<HeaderCard imgAlt={ project.title } imgLink={ project.mainImage! }/>
 
