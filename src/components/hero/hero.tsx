@@ -3,16 +3,16 @@ import MyContactButton from "./myContact"
 
 export default function Hero() {
   return (
-    <div className="[&_h1]:text-2xl w-full md:h-[calc(100vh-64px)] flex flex-col items-center justify-center md:flex-row">
-        <div className="w-[300px] md:w-[450px] flex flex-col items-center">
+    <div className="[&_h1]:text-2xl w-full md:h-[calc(100vh-64px)] flex flex-col items-center justify-center gap-y-4 md:gap-x-4 md:flex-row">
+        <div className="w-[300px] md:w-[450px] flex flex-col items-center hero-animation-left">
           <p className="block md:hidden font-bold text-3xl text-center">Hi, Welcome to my portfolio</p>          
-          <Image priority src={'/avatar.png'} alt="picture of ryan" width={250} height={400} draggable={false}/>
-          <div className="rounded-full text-center justify-center logo-dark bg-slate-100 w-full">
+          <Image className="px-2" priority src={'/avatar2.png'} alt="picture of ryan" width={1000} height={800} draggable={false}/>
+          <div className="rounded-xl text-center justify-center logo-dark bg-sky-200 w-full">
             <p className="font-bold">Ryan Bachtiar Abdalla</p>
             <p>Fullstack Web Developer</p>
           </div>
         </div>
-        <div className="md:w-1/2 md:flex flex-col md:h-[400px] justify-evenly">
+        <div className="md:w-1/2 md:flex flex-col md:h-[400px] justify-evenly hero-animation-right">
           <p className="hidden md:block font-bold text-3xl">Hi, Welcome to my portfolio</p>
           <p> 
             I&apos;m a Fullstack web developer, Mostly stack my project used is ReactJS with NextJS framework for frontend, NodeJS with

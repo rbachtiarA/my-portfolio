@@ -37,3 +37,37 @@ body {
         @apply text-[#025582];
     }
 }
+
+.hero-animation-left {
+    animation: 1s fade-in-left-right linear;
+}
+
+.hero-animation-right {
+    animation: 1s fade-in-right-left linear;
+}
+
+@keyframes fade-in-left-right {
+    from {
+        scale: 0.7;
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes fade-in-right-left {
+    from {
+        scale: 0.7;
+        opacity: 0;
+        transform: translate(300px);
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
