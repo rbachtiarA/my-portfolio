@@ -33,14 +33,14 @@ function FooterCard({ linkDemo, linkGit }: { linkGit?: string, linkDemo?: string
 		<div className='flex gap-2 justify-end w-full'>
 			{
 				linkDemo &&
-				<Link href={linkDemo} >
-					<button className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold'>Live Demo</button>
+				<Link href={linkDemo} className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold'>
+					Live Demo
 				</Link>
 			}
 			{
 				linkGit &&
-				<Link href={linkGit} >
-					<button className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold'><FaGithub size={24}/></button>
+				<Link href={linkGit} className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold' aria-label={`git repository`}>
+					<FaGithub size={24}/>
 				</Link>
 			}
 		</div>

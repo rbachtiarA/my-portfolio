@@ -19,14 +19,14 @@ export default function Skillset() {
   function SkillSetItem ({content, label}:{content: string, label: string}) {
     return (
       <li key={label} className="flex flex-col justify-between items-center">
-        <Image className={'grayscale hover:grayscale-0 transition hover:scale-110'} src={content} width={72} height={72} alt={label}/>
+        <Image className={'grayscale hover:grayscale-0 transition hover:scale-110'} src={content} width={72} height={72} alt={`logo of ${label}`}/>
         <p>{label}</p>
       </li>
     )
   }
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center gap-4">
         <h1 className="text-4xl">Skills & Languages</h1>
         <ul className="grid grid-cols-4 md:grid-cols-7 md:gap-x-10 gap-2 justify-end w-full h-full">
             {MY_SKILL_SET_STRING.map((item) => (
