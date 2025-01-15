@@ -3,7 +3,7 @@ import MyContactButton from "./myContact"
 
 export default function Hero() {
   return (
-    <div className="[&_h1]:text-2xl w-full md:h-[calc(100vh-64px)] flex flex-col items-center justify-center gap-y-4 md:gap-x-4 md:flex-row">
+    <div className="[&_h1]:text-2xl w-full md:h-[calc(100vh-64px)] flex flex-col items-center justify-center gap-y-4 md:gap-x-4 md:flex-row main-animation">
         <div className="w-[300px] md:w-[450px] flex flex-col items-center hero-animation-left">
           <p className="block md:hidden font-bold text-3xl text-center">Hi, Welcome to my portfolio</p>          
           <Image className="px-2" priority src={'/avatar2.png'} alt="picture of ryan" width={1000} height={800} draggable={false}/>

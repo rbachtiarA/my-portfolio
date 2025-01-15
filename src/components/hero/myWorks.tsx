@@ -77,7 +77,7 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
 ] 
 export default function MyWorks() {
     return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 main-animation">
         <h1 className="text-4xl text-center">My Works</h1>
         <ul className="[&_h3]:font-semibold [&_h3]:text-blue-400 grid grid-flow-row md:grid-cols-2 gap-4">
             {MY_WORKS_ITEMS.map((item, idx) => (

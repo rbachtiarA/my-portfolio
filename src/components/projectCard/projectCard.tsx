@@ -50,7 +50,7 @@ function FooterCard({ linkDemo, linkGit }: { linkGit?: string, linkDemo?: string
 }
 export default function ProjectCard({ project }: { project: IMyWorkItem }) {
   return (
-    <li className='w-full h-full grid grid-rows-[200px_1fr_2em] justify-center items-center py-4 px-2 gap-y-2 shadow-sm bg-slate-50 rounded-sm hover:[&_img]:scale-125 [&_*]:transition-all duration-300'>
+    <li className='main-animation w-full h-full grid grid-rows-[200px_1fr_2em] justify-center items-center py-4 px-2 gap-y-2 shadow-sm bg-slate-50 rounded-sm hover:[&_img]:scale-125 [&_*]:transition-all duration-300'>
       {/* HEADER */}
 			<HeaderCard imgAlt={ project.title } imgLink={ project.mainImage! }/>
 

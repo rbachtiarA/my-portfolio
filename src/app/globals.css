@@ -41,13 +41,23 @@ h1 {
     }
 }
 
-.hero-animation-left {
-    animation: 1s fade-in-left-right linear;
+@media (prefers-reduced-motion: no-preference) {
+    .main-animation {
+        animation: fade-in-bottom-top both;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    .hero-animation-left {
+        animation: 1s fade-in-left-right linear;
+    }
+    
+    .hero-animation-right {
+        animation: 1s fade-in-right-left linear;
+    }
 }
 
-.hero-animation-right {
-    animation: 1s fade-in-right-left linear;
-}
+
 
 @keyframes fade-in-left-right {
     from {
@@ -72,5 +82,12 @@ h1 {
         scale: 1;
         opacity: 1;
         transform: translate(0px);
+    }
+}
+
+@keyframes fade-in-bottom-top {
+    from {
+        opacity: 0;
+        transform: translateY(10vh);
     }
 }
