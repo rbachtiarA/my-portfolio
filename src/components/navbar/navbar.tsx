@@ -5,11 +5,12 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className='w-full bg-slate-100 border border-b-2 sticky top-0 flex items-center p-4 min-h-16 z-10'>
+    <nav className='w-full bg-slate-100 border border-b-2 sticky top-0 grid lg:grid-cols-[1fr_3fr_1fr] items-center p-4 min-h-16 z-10'>
+      <div className='lg:col-start-2 flex justify-center items-center'>
         <span className='flex w-full'>
           <Link href={'/'} className='hover:brightness-150 brand-logo flex justify-start items-center gap-2 transition'>
-            <Image src={'/logo-dark.png'} alt={'Logo RyanBA'} width={64} height={64} />
-            <h1 className='logo-dark text-xl'>RyanBA</h1>
+            <Image priority src={'/logo-dark.png'} alt={'Logo RyanBA'} width={64} height={64} />
+            <h1 className='hidden sm:block logo-dark text-xl'>RyanBA</h1>
           </Link>
         </span>
 
@@ -21,6 +22,7 @@ export default function Navbar() {
             <LinkButton link='/contact' label='Contact Me' />
           </ul>
         </div>
+      </div>
     </nav>
   )
 }
