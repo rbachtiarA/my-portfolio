@@ -8,7 +8,7 @@ export default function MyWorksCard({ item } :{item: IMyWorkItem}) {
 
         <div className="md:flex space-y-4">
             <div className="md:w-1/2 flex items-center justify-center">
-                <Image className="rounded-md border-slate-200 border-[1px]" src={item.mainImage || '/'} alt={item.title} width={400} height={300}/>
+                <Image className="rounded-md border-slate-200 border-[1px] h-[200px] object-cover" src={item.mainImage || '/'} alt={item.title} width={400} height={200}/>
             </div>
             <div className="md:w-1/2">
 
