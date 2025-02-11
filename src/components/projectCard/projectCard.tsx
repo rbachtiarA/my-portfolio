@@ -8,9 +8,9 @@ import Link from 'next/link'
 function HeaderCard({imgLink, imgAlt}: { imgLink: string, imgAlt: string }) {
 
 	return (
-		<div className='w-full flex justify-center'>
-			<div className='overflow-hidden rounded-md max-w-[450px]'>
-				<Image src={imgLink} width={450} height={0} alt={imgAlt}/>
+		<div className='flex justify-center'>
+			<div className='overflow-hidden rounded-md max-w-[450px] max-h-[200px]'>
+					<Image src={imgLink} width={450} height={200} alt={imgAlt} />
 			</div>
 		</div>
 	)
@@ -43,6 +43,12 @@ function FooterCard({ linkDemo, linkGit }: { linkGit?: string, linkDemo?: string
 				linkGit &&
 				<Link href={linkGit} className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold' aria-label={`git repository`}>
 					<FaGithub size={24}/>
+				</Link>
+			}
+			{
+				!linkDemo && !linkGit &&
+				<Link href={'/'} className='bg-slate-200 px-2 py-1 border rounded-md hover:bg-slate-400 font-semibold' aria-label={`on progress`}>
+					Works in Progress
 				</Link>
 			}
 		</div>

@@ -18,7 +18,7 @@ export default function Hero() {
             I&apos;m a Fullstack web developer, Mostly stack my project used is ReactJS with NextJS framework for frontend, NodeJS with
             expressJS for logic and RESTful API backend, and with help Prisma ORM to design schema and data management for MySQL or PostgreSQL database.
             My demo projects deployed in vercel platform using supabase as temporary database. Right now, I&apos;m trying to boarden my knowledge 
-            with other frameworks such as laravel and tauri(?) and improve my knowledge in testing e2e for better CI/CD in my upcoming projects.
+            with go language programing, and dug deeper advanced stuff on nextJS and improve my knowledge in testing e2e for better CI/CD in my upcoming projects.
           </p>
           <div className="flex justify-end">
             <MyContactButton />
