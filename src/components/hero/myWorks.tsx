@@ -4,6 +4,37 @@ import { IMyWorkItem } from "@/types/myworks";
 
 const MY_WORKS_ITEMS: IMyWorkItem[] = [
     {
+        title: 'Kriibo Web App',
+        summary: 'A community forum application for sharing moments and thoughts on interesting topics. This platform helps you connect with others, engage in discussions, and express your feelings through comments on friend\'s posts.The app is built with Next.js for both the frontend and backend, using Supabase for database management and authentication, and Pinata Cloud for image storage.',
+        linkGithub: '',
+        linkDetails: '',
+        mainImage: '/underconstruction.png',
+        tools: [
+            'javascript', 'typescript', 'html', 'css', 'nextjs', 'supabase', 'prisma'
+        ],
+        images: [
+            '/underconstruction.jpg'
+        ],
+        features: [
+            {
+                label: 'Register & Login', 
+                description: 'User can login with registered email or Gmail account'
+            },
+            {
+                label: 'Post and Comment', 
+                description: 'User can posting their moment with text and image, view others post, and can comment to other users posts'
+            },
+            {
+                label: 'Customize Profile', 
+                description: 'User can custom the profile details, profile picture, and profile banner'
+            },
+            {
+                label: 'Message', 
+                description: 'User can message user-to-user privately via message feature'
+            },
+        ]
+    },
+    {
         title: 'Bermuda Store',
         summary: 'A modern web-based grocery store application designed to simplify and enhance the shopping experience for customers. Built with NextJS framework for a fast, responsive frontend, Express.js for a robust backend, and Prisma with MySQL for efficient database management, it ensures high performance and scalability. The platform offers user-friendly navigation, secure transactions, and features tailored for convenience, such as personalized shopping lists, real-time inventory updates, and seamless checkout. With a focus on reliability and customer satisfaction, Bermuda Store aims to revolutionize the online grocery shopping experience.',
         linkDemo: 'https://bermuda-web.vercel.app/',
@@ -71,37 +102,6 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
             {
                 label: 'Tracking ticket', 
                 description: 'User can track their ticket they already bought, so they cant be missed for their event'
-            },
-        ]
-    },
-    {
-        title: 'Kriibo Web App',
-        summary: 'A community forum application to share your moments / thoughts about interesting topic. An application that help you connect with other people in community to discuss their story or comment to express your feeling about your friend post. This app use nextJS framework as front-end and Back-end, supabase as database and authentication, and pinata cloud as image storage.',
-        linkGithub: '',
-        linkDetails: '',
-        mainImage: '/underconstruction.png',
-        tools: [
-            'javascript', 'typescript', 'html', 'css', 'nextjs', 'supabase', 'prisma'
-        ],
-        images: [
-            '/underconstruction.jpg'
-        ],
-        features: [
-            {
-                label: 'Register & Login', 
-                description: 'User can login with registered email or Gmail account'
-            },
-            {
-                label: 'Post and Comment', 
-                description: 'User can posting their moment with text and image, view others post, and can comment to other users posts'
-            },
-            {
-                label: 'Customize Profile', 
-                description: 'User can custom the profile details, profile picture, and profile banner'
-            },
-            {
-                label: 'Message', 
-                description: 'User can message user-to-user privately via message feature'
             },
         ]
     },

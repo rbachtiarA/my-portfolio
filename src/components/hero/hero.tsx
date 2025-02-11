@@ -15,10 +15,9 @@ export default function Hero() {
         <div className="md:w-1/2 md:flex flex-col md:h-[400px] justify-evenly hero-animation-right">
           <p className="hidden md:block font-bold text-3xl">Hi, Welcome to my portfolio</p>
           <p> 
-            I&apos;m a Fullstack web developer, Mostly stack my project used is ReactJS with NextJS framework for frontend, NodeJS with
-            expressJS for logic and RESTful API backend, and with help Prisma ORM to design schema and data management for MySQL or PostgreSQL database.
-            My demo projects deployed in vercel platform using supabase as temporary database. Right now, I&apos;m trying to boarden my knowledge 
-            with go language programing, and dug deeper advanced stuff on nextJS and improve my knowledge in testing e2e for better CI/CD in my upcoming projects.
+          I&apos;m a Full-stack web developer. My primary stack includes React.js with the Next.js framework for the frontend, and Node.js with Express.js for backend logic and RESTful APIs. I use Prisma ORM for schema design and data management with MySQL or PostgreSQL databases.
+
+My demo projects are deployed on Vercel, using Supabase as a temporary database. Right now, I&apos;m working on expanding my knowledge of Go programming, diving deeper into advanced Next.js concepts, and improving my expertise in end-to-end (E2E) testing for better CI/CD in my upcoming projects.
           </p>
           <div className="flex justify-end">
             <MyContactButton />
