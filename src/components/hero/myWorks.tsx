@@ -6,7 +6,7 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
     {
         title: 'Kriibo Web App',
         summary: 'A community forum application for sharing moments and thoughts on interesting topics. This platform helps you connect with others, engage in discussions, and express your feelings through comments on friend\'s posts.The app is built with Next.js for both the frontend and backend, using Supabase for database management and authentication, and Pinata Cloud for image storage.',
-        linkDemo: 'https://kriibo-web.vercel.app/',
+        linkDemo: 'https://kriibo-app.vercel.app/',
         linkGithub: '',
         linkDetails: '',
         mainImage: '/underconstruction.png',
