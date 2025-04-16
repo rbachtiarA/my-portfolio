@@ -1,17 +1,18 @@
-export interface IMyWorkItem {
+export interface MyProjectItem {
+    type: "Personal Project" | "Open Source" | "Freelance" | "Internship" | "Hackathon" | "Collaboration",
     title: string;
     summary: string;
     longDescription?: STARMethod;
     linkDemo?: string;
     linkGithub: string;
     linkDetails: string;
-    features?: IWorkFeature[];
+    features?: ProjectFeature[];
     mainImage?:string,
     images: string[];
     tools: WorkTools[]
 }
 
-interface IWorkFeature {
+interface ProjectFeature {
     label: string;
     description: string;
 }

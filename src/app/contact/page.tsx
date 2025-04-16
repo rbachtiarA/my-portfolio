@@ -1,4 +1,4 @@
-import MyContactButton from "@/components/hero/myContact";
+import MyContactButton from "@/components/ContactsButton";
 
 export default function page() {
   return (

@@ -1,4 +1,4 @@
-import { MY_WORKS_ITEMS } from "@/static/myworks";
+import { MY_WORKS_ITEMS } from "@/constant/myProjects";
 import MyWorksCard from "./myWorksCard";
 
 export default function MyWorksList() {

@@ -1,13 +1,12 @@
-'use client'
-import ProjectCard from "../projectCard/projectCard"
-import { IMyWorkItem } from "@/types/myworks";
+import { MyProjectItem } from "@/types/myProject";
 
-const MY_WORKS_ITEMS: IMyWorkItem[] = [
+export const MY_WORKS_ITEMS: MyProjectItem[] = [
     {
         title: 'Kriibo Web App',
+        type: 'Personal Project',
         summary: 'A community forum application for sharing moments and thoughts on interesting topics. This platform helps you connect with others, engage in discussions, and express your feelings through comments on friend\'s posts.The app is built with Next.js for both the frontend and backend, using Supabase for database management and authentication, and Pinata Cloud for image storage.',
-        linkDemo: 'https://kriibo-app.vercel.app/',
-        linkGithub: '',
+        linkDemo: 'https://kriibo-web.vercel.app/',
+        linkGithub: 'https://github.com/rbachtiarA/Forum-app',
         linkDetails: '',
         mainImage: '/underconstruction.png',
         tools: [
@@ -34,14 +33,15 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
                 description: 'User can message user-to-user privately via message feature'
             },
         ]
-    },
+    },  
     {
         title: 'Bermuda Store',
+        type: 'Collaboration',
         summary: 'A modern web-based grocery store application designed to simplify and enhance the shopping experience for customers. Built with NextJS framework for a fast, responsive frontend, Express.js for a robust backend, and Prisma with MySQL for efficient database management, it ensures high performance and scalability. The platform offers user-friendly navigation, secure transactions, and features tailored for convenience, such as personalized shopping lists, real-time inventory updates, and seamless checkout. With a focus on reliability and customer satisfaction, Bermuda Store aims to revolutionize the online grocery shopping experience.',
         linkDemo: 'https://bermuda-web.vercel.app/',
         linkGithub: 'https://github.com/rbachtiarA/Bermuda-app',
         linkDetails: '/works/bermuda-store-app',
-        mainImage: '/bermuda-homepage1.jpg',
+        mainImage: '/bermuda-homepage1.webp',
         tools: [
             'javascript', 'typescript', 'nextjs', 'nextui','nodejs', 'mysql', 'prisma', 'supabase'
         ],
@@ -73,10 +73,11 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
     },
     {
         title: 'Bandar Ticket',
+        type: 'Collaboration',
         summary: 'A comprehensive event ticketing web application designed to cater to different user roles. Customers can easily browse, buy, or book tickets for various events, while organizers can efficiently create events, manage ticketing, and monitor sales performance. Administrators oversee all platform data, ensuring smooth operations and integrity. Built with NextJS for an intuitive and dynamic user interface, Express.js for a scalable backend, and Prisma with MySQL for reliable database management, Bandar Tiket offers a seamless and secure platform for event management and ticket purchasing.',
         linkGithub: 'https://github.com/rbachtiarA/bandar-ticket-app',
         linkDetails: '/works/bandar-ticket-app',
-        mainImage: '/bandar-home.png',
+        mainImage: '/bandar-home.webp',
         tools: [
             'javascript', 'typescript', 'html', 'css', 'nextjs', 'expressjs', 'prisma', 'mysql'
         ],
@@ -107,15 +108,3 @@ const MY_WORKS_ITEMS: IMyWorkItem[] = [
         ]
     },
 ] 
-export default function MyWorks() {
-    return (
-    <div className="flex flex-col gap-4 main-animation">
-        <h1 className="text-4xl text-center">My Works</h1>
-        <ul className="[&_h3]:font-semibold [&_h3]:text-blue-400 grid grid-flow-row md:grid-cols-2 gap-4">
-            {MY_WORKS_ITEMS.map((item, idx) => (
-                <ProjectCard project={item} key={idx} />
-            ))}
-        </ul>
-    </div>
-  )
-}

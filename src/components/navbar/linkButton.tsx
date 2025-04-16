@@ -12,7 +12,7 @@ export default function LinkButton({label, link}: {link: string, label: string})
             <button 
                 onClick={() => router.push(link)} 
                 disabled={`/${path.split('/')[1]}` === link}
-                className={`${`/${path.split('/')[1]}`=== link? 'font-bold' : ''} logo-dark`}
+                className={`${`/${path.split('/')[1]}`=== link? 'font-bold' : ''} text-primary`}
             >
                 {label}
             </button>

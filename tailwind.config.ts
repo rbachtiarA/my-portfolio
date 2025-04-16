@@ -4,6 +4,7 @@ export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -19,9 +20,14 @@ export default {
         wiggleAppear: 'wiggleAppear 1s linear'
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        'heading': "#37B6FF"
+        // background: "var(--background)",
+        // foreground: "var(--foreground)",
+        'heading': "#37B6FF",
+        primary: "#083D77",
+        secondary: "#6290C8",
+        background: "#F4EDEA",
+        foreground: "#363020",
+        extra: "#A37774"
       },
     },
   },

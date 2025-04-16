@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function Skillset() {
   const MY_SKILL_SET_STRING: {content: string, label: string}[] = [
     {content: '/Typescript_Logo.svg', label: 'Typescript'},
@@ -23,7 +22,9 @@ export default function Skillset() {
         className={`flex flex-col justify-between items-center opacity-0 animate-wiggleAppear`} 
         style={{animationTimeline: 'view()', animationRange: '0% 20%', animationFillMode: 'forwards'}}
       >
-        <Image className={'grayscale hover:grayscale-0 transition hover:scale-110'} src={content} width={72} height={72} alt={`logo of ${label}`}/>
+        <picture>
+          <img className={'grayscale hover:grayscale-0 transition hover:scale-110'} src={content} width={72} height={72} alt={`logo of ${label}`}/>
+        </picture>
         <p>{label}</p>
       </li>
     )
@@ -31,7 +32,7 @@ export default function Skillset() {
 
   return (
     <div className="flex flex-col items-center gap-4 main-animation">
-        <h1 className="text-4xl">Skills & Languages</h1>
+        <h2 className="text-4xl">Skills & Languages</h2>
         <ul className="grid grid-cols-4 md:grid-cols-7 md:gap-x-10 gap-2 justify-end w-full h-full">
             {MY_SKILL_SET_STRING.map((item) => (
               <SkillSetItem content={item.content} label={item.label} key={item.label} />

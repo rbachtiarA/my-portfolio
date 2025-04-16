@@ -1,9 +1,9 @@
 // import localFont from "next/font/local";
-import type { Metadata } from "next";
-import { League_Spartan } from "next/font/google"
-import "./globals.css";
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/navbar";
-import ContactMe from "@/components/contact/contactMe";
+import type { Metadata } from "next";
+import { League_Spartan } from "next/font/google";
+import "./globals.css";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -34,13 +34,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${leagueSpartan.className} antialiased flex flex-col min-h-screen bg-gradient-to-b from-slate-100 from-40% to-sky-200`}
+        className={`${leagueSpartan.className} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
         <main className="flex-1 h-full">
           {children}
         </main>
-        <ContactMe />
+        <Footer />
       </body>
     </html>
   );

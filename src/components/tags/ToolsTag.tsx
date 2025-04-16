@@ -1,11 +1,11 @@
-import { IMyWorkItem } from '@/types/myworks'
+import { MyProjectItem } from '@/types/myProject'
 import React from 'react'
 import { BiLogoTypescript } from 'react-icons/bi';
 import { FaCss3Alt, FaHtml5, FaNodeJs } from 'react-icons/fa';
 import { RiJavascriptFill, RiNextjsFill, RiSupabaseFill } from 'react-icons/ri';
 import { SiExpress, SiMysql, SiNextui, SiPostgresql, SiPrisma } from 'react-icons/si';
 
-function TagLogo({ tag }: { tag: IMyWorkItem['tools'][number] }) {
+function TagLogo({ tag }: { tag: MyProjectItem['tools'][number] }) {
     let logo;
     let name;
     switch (tag) {
@@ -72,13 +72,13 @@ function TagLogo({ tag }: { tag: IMyWorkItem['tools'][number] }) {
     }
 
     return (
-        <div className='flex gap-x-1 border bg-slate-50 shadow-sm px-1 justify-center items-center rounded-sm'>
+        <div className='flex gap-x-1 border-extra border-2 shadow-sm px-1 justify-center items-center rounded-sm'>
             {logo}
             <span>{name || tag}</span>
         </div>
     )
 }
-export default function ToolsTag({ tags }: { tags: IMyWorkItem['tools'] }) {
+export default function ToolsTag({ tags }: { tags: MyProjectItem['tools'] }) {
   return (
     <div className='flex gap-1 flex-wrap'>
         {tags.map((tag) => (
