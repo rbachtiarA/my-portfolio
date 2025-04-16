@@ -1,6 +1,6 @@
 // import localFont from "next/font/local";
 import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/NavbarHead";
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import LinkButton from './LinkButton'
+import LinkButton from './LinkNavbar'
 export default function Navbar() {
   const [show, setShow] = useState(true)
   const [scrollY, setScrollY] = useState(0)
